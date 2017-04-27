@@ -1,0 +1,25 @@
+{
+  "name": "country",
+  "version": "1.0.0",
+  "description": "browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bRossa30/AJAX.git"
+  },
+  "author": "bRossa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bRossa30/AJAX/issues"
+  },
+  "homepage": "https://github.com/bRossa30/AJAX#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lato')
+@import variable
+
+*
+	box-sizing: border-box
+
+body
+	background: $bodyColor
+	font-size: $baseFontSize
+	font-family: "Lato", sans-serif
+	color: $fontColor
+
+h1 
+	margin-bottom: 50px
+	color: $h1Color
+	font-size: 2.5em
+	text-align: center
+
+h3
+	text-align: center
+	font-size: 1.5em
+	margin-bottom: 30px
+
+main 
+	margin-top: 80px
+	position: relative
+
+.search-box 
+	background: $searchBoxColor
+	padding: 2px
+	border: 2px solid rgba(0, 0, 0, .3)
+	border-radius: $borderRadius
+	width: $searchBoxWidth
+	margin: 0 auto
+
+input
+	width: 276px
+	padding: 15px 10px
+	background: $searchBoxColor
+	color: $searchFontColor
+	border: none
+	font-size: $baseFontSize
+
+	&:focus
+		outline: none
+
+button
+	color: $lightColor
+	background: $intenseColor
+	border: none
+	width: 60px
+	height: 45px
+	cursor: pointer
+
+	&:hover 
+		background: $intenseLightColor
+	
+	&:focus
+		outline: none
+
+ul 
+	list-style: none
+	padding: 0
+
+li 
+	width: $carouselWidth
+	float: left
+
+span 
+	display: inline-block
+
+#carousel
+	width: $carouselWidth
+	overflow: hidden
+	margin: 0 auto
+
+.control 
+	background: transparent
+	border: none
+	color: $intenseColor
+	position: absolute
+	top: 50%
+	z-index: 9999
+	transition: .3s
+
+	&:hover
+		color: $lightColor
+		background: $intenseColor
+
+	&[disabled="disabled"] 
+		color: $buttonDisabledColor
+
+		&:hover 
+			background: transparent
+
+	&-left 
+		left: 200px
+	&-right 
+		right: 200px
+
+i
+	&.fa-search
+		font-size: 18px
+
+	&.fa-chevron-right,
+	&.fa-chevron-left 
+		font-size: 32px
+
+.warning 
+	font-size: 1.2em
+	padding-top: 50px
+	font-weight: 400
+
+.search-results 
+	width: $searchBoxWidth
+	margin: 0 auto
+	padding: 20px 0	
+
+.country-data 
+	width: $searchBoxWidth
+	margin: 0 auto
+	font-size: 1.2em
+
+	&-title 
+		margin-right: 30px
+		width: 100px
+
+	&-row 
+		+displayFlex
+		padding: 20px 0
+		justify-content: flex-start
+
+	i.fa
+		display: inline-block
+		color: $intenseColor
+		min-width: 50px
+	
